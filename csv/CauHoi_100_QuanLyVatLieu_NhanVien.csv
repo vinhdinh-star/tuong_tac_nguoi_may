@@ -1,0 +1,101 @@
+﻿ID,Nhom_Cau_Hoi,Cau_Hoi_Tieng_Viet,SQL_Query
+1,Quan ly Nhan vien,Hiển thị danh sách toàn bộ nhân viên trong công ty.,SELECT * FROM NhanVien;
+2,Quan ly Nhan vien,Cho biết mã nhân viên và họ tên của tất cả nhân viên.,"SELECT MaNV, HoTen FROM NhanVien;"
+3,Quan ly Nhan vien,Thống kê danh sách các chức vụ hiện có và số lượng nhân viên ở mỗi chức vụ.,"SELECT ChucVu, COUNT(*) AS SoLuong FROM NhanVien GROUP BY ChucVu;"
+4,Quan ly Nhan vien,Danh sách các nhân viên giữ chức vụ 'Thu kho'.,"SELECT MaNV, HoTen FROM NhanVien WHERE ChucVu = 'Thu kho';"
+5,Quan ly Nhan vien,Danh sách các nhân viên giữ chức vụ 'Quan ly kho'.,"SELECT MaNV, HoTen FROM NhanVien WHERE ChucVu = 'Quan ly kho';"
+6,Quan ly Nhan vien,Những nhân viên nào làm công việc 'Kiem ke'?,"SELECT MaNV, HoTen FROM NhanVien WHERE ChucVu = 'Kiem ke';"
+7,Quan ly Nhan vien,Liệt kê nhân viên thuộc bộ phận 'Nhan vien ban hang'.,"SELECT MaNV, HoTen FROM NhanVien WHERE ChucVu = 'Nhan vien ban hang';"
+8,Quan ly Nhan vien,Tìm danh sách nhân viên có họ là 'Nguyen'.,SELECT * FROM NhanVien WHERE HoTen LIKE 'Nguyen%';
+9,Quan ly Nhan vien,Tìm danh sách nhân viên có họ là 'Tran'.,SELECT * FROM NhanVien WHERE HoTen LIKE 'Tran%';
+10,Quan ly Nhan vien,Tìm nhân viên có tên là 'Vinh'.,SELECT * FROM NhanVien WHERE HoTen LIKE '%Vinh';
+11,Quan ly Nhan vien,Tìm nhân viên có tên chứa chữ 'Tung'.,SELECT * FROM NhanVien WHERE HoTen LIKE '%Tung%';
+12,Quan ly Nhan vien,Đếm tổng số nhân viên làm việc tại công ty.,SELECT COUNT(*) AS TongSoNhanVien FROM NhanVien;
+13,Quan ly Nhan vien,Những nhân viên nào đã từng thực hiện lập phiếu nhập kho?,"SELECT DISTINCT nv.MaNV, nv.HoTen FROM NhanVien nv JOIN PhieuNhap pn ON nv.MaNV = pn.MaNV;"
+14,Quan ly Nhan vien,Những nhân viên nào đã từng thực hiện lập phiếu xuất kho?,"SELECT DISTINCT nv.MaNV, nv.HoTen FROM NhanVien nv JOIN PhieuXuat px ON nv.MaNV = px.MaNV;"
+15,Quan ly Nhan vien,Những nhân viên nào vừa lập phiếu nhập vừa lập phiếu xuất?,SELECT DISTINCT MaNV FROM PhieuNhap INTERSECT SELECT DISTINCT MaNV FROM PhieuXuat;
+16,Quan ly Nhan vien,Những nhân viên nào chưa từng lập phiếu nhập hay phiếu xuất nào?,"SELECT MaNV, HoTen FROM NhanVien WHERE MaNV NOT IN (SELECT MaNV FROM PhieuNhap UNION SELECT MaNV FROM PhieuXuat);"
+17,Quan ly Nhan vien,Thống kê số lượng phiếu nhập mà mỗi nhân viên đã lập.,"SELECT nv.MaNV, nv.HoTen, COUNT(pn.MaPN) AS SoPhieuNhap FROM NhanVien nv LEFT JOIN PhieuNhap pn ON nv.MaNV = pn.MaNV GROUP BY nv.MaNV, nv.HoTen;"
+18,Quan ly Nhan vien,Thống kê số lượng phiếu xuất mà mỗi nhân viên đã lập.,"SELECT nv.MaNV, nv.HoTen, COUNT(px.MaPX) AS SoPhieuXuat FROM NhanVien nv LEFT JOIN PhieuXuat px ON nv.MaNV = px.MaNV GROUP BY nv.MaNV, nv.HoTen;"
+19,Quan ly Nhan vien,Top 5 nhân viên lập nhiều phiếu xuất nhất.,"SELECT nv.MaNV, nv.HoTen, COUNT(px.MaPX) AS SoPhieu FROM NhanVien nv JOIN PhieuXuat px ON nv.MaNV = px.MaNV GROUP BY nv.MaNV, nv.HoTen ORDER BY SoPhieu DESC LIMIT 5;"
+20,Quan ly Nhan vien,Top 5 nhân viên lập nhiều phiếu nhập nhất.,"SELECT nv.MaNV, nv.HoTen, COUNT(pn.MaPN) AS SoPhieu FROM NhanVien nv JOIN PhieuNhap pn ON nv.MaNV = pn.MaNV GROUP BY nv.MaNV, nv.HoTen ORDER BY SoPhieu DESC LIMIT 5;"
+21,Quan ly Nhan vien,Cho biết nhân viên nào xử lý tổng giá trị xuất hàng lớn nhất.,"SELECT nv.MaNV, nv.HoTen, SUM(ct.SoLuong * ct.DonGia) AS TongGiaTriXuat FROM NhanVien nv JOIN PhieuXuat px ON nv.MaNV = px.MaNV JOIN ChiTietPhieuXuat ct ON px.MaPX = ct.MaPX GROUP BY nv.MaNV, nv.HoTen ORDER BY TongGiaTriXuat DESC LIMIT 1;"
+22,Quan ly Nhan vien,Hiển thị danh sách nhân viên được sắp xếp theo tên từ A đến Z.,SELECT * FROM NhanVien ORDER BY HoTen ASC;
+23,Quan ly Nhan vien,Cho biết các nhân viên có mã nhân viên bắt đầu bằng 'NV0'.,SELECT * FROM NhanVien WHERE MaNV LIKE 'NV0%';
+24,Quan ly Nhan vien,Chức vụ nào có số lượng nhân viên đông nhất?,"SELECT ChucVu, COUNT(*) AS SoLuong FROM NhanVien GROUP BY ChucVu ORDER BY SoLuong DESC LIMIT 1;"
+25,Quan ly Nhan vien,Có bao nhiêu nhân viên là 'Ke toan'?,SELECT COUNT(*) AS SoKeToan FROM NhanVien WHERE ChucVu = 'Ke toan';
+26,Quan ly Kho & Nha Cung Cap,Hiển thị toàn bộ thông tin các kho hàng.,SELECT * FROM Kho;
+27,Quan ly Kho & Nha Cung Cap,Cho biết tên kho và địa chỉ của từng kho.,"SELECT TenKho, DiaChi FROM Kho;"
+28,Quan ly Kho & Nha Cung Cap,Đếm tổng số kho hàng hiện có.,SELECT COUNT(*) AS TongSoKho FROM Kho;
+29,Quan ly Kho & Nha Cung Cap,Hiển thị danh sách tất cả các nhà cung cấp.,SELECT * FROM NhaCungCap;
+30,Quan ly Kho & Nha Cung Cap,Cho biết tên nhà cung cấp và số điện thoại liên hệ.,"SELECT TenNCC, DienThoai FROM NhaCungCap;"
+31,Quan ly Kho & Nha Cung Cap,Danh sách các nhà cung cấp ở địa bàn 'Quy Nhon'.,SELECT * FROM NhaCungCap WHERE DiaChi LIKE '%Quy Nhon%';
+32,Quan ly Kho & Nha Cung Cap,Danh sách các nhà cung cấp ở 'Da Nang'.,SELECT * FROM NhaCungCap WHERE DiaChi LIKE '%Da Nang%';
+33,Quan ly Kho & Nha Cung Cap,Thống kê tổng số lượng phiếu nhập đến từ mỗi nhà cung cấp.,"SELECT ncc.MaNCC, ncc.TenNCC, COUNT(pn.MaPN) AS SoPhieuNhap FROM NhaCungCap ncc LEFT JOIN PhieuNhap pn ON ncc.MaNCC = pn.MaNCC GROUP BY ncc.MaNCC, ncc.TenNCC;"
+34,Quan ly Kho & Nha Cung Cap,Thống kê tổng tiền hàng đã nhập từ mỗi nhà cung cấp.,"SELECT ncc.MaNCC, ncc.TenNCC, SUM(ct.SoLuong * ct.DonGia) AS TongGiaTriNhap FROM NhaCungCap ncc JOIN PhieuNhap pn ON ncc.MaNCC = pn.MaNCC JOIN ChiTietPhieuNhap ct ON pn.MaPN = ct.MaPN GROUP BY ncc.MaNCC, ncc.TenNCC;"
+35,Quan ly Kho & Nha Cung Cap,Nhà cung cấp nào có tổng giá trị giao dịch nhập hàng lớn nhất?,"SELECT ncc.MaNCC, ncc.TenNCC, SUM(ct.SoLuong * ct.DonGia) AS TongGiaTri FROM NhaCungCap ncc JOIN PhieuNhap pn ON ncc.MaNCC = pn.MaNCC JOIN ChiTietPhieuNhap ct ON pn.MaPN = ct.MaPN GROUP BY ncc.MaNCC, ncc.TenNCC ORDER BY TongGiaTri DESC LIMIT 1;"
+36,Quan ly Kho & Nha Cung Cap,Nhà cung cấp nào chưa có giao dịch nhập hàng nào?,SELECT * FROM NhaCungCap WHERE MaNCC NOT IN (SELECT DISTINCT MaNCC FROM PhieuNhap);
+37,Quan ly Kho & Nha Cung Cap,Những vật liệu nào đã được nhập từ nhà cung cấp có mã 'NCC01'?,SELECT DISTINCT ct.MaVT FROM PhieuNhap pn JOIN ChiTietPhieuNhap ct ON pn.MaPN = ct.MaPN WHERE pn.MaNCC = 'NCC01';
+38,Quan ly Kho & Nha Cung Cap,Hiển thị nhà cung cấp kèm theo lần nhập hàng gần đây nhất.,"SELECT ncc.MaNCC, ncc.TenNCC, MAX(pn.NgayNhap) AS NgayNhapMoiNhat FROM NhaCungCap ncc LEFT JOIN PhieuNhap pn ON ncc.MaNCC = pn.MaNCC GROUP BY ncc.MaNCC, ncc.TenNCC;"
+39,Quan ly Kho & Nha Cung Cap,Tìm nhà cung cấp có tên chứa chữ 'Nam A'.,SELECT * FROM NhaCungCap WHERE TenNCC LIKE '%Nam A%';
+40,Quan ly Kho & Nha Cung Cap,Cho biết tổng số nhà cung cấp đã từng hợp tác nhập hàng.,SELECT COUNT(DISTINCT MaNCC) AS SoNCCCoGiaoDich FROM PhieuNhap;
+41,Quan ly Kho & Nha Cung Cap,Liệt kê kho có tên chứa từ 'Tong'.,SELECT * FROM Kho WHERE TenKho LIKE '%Tong%';
+42,Quan ly Kho & Nha Cung Cap,Kho nào nằm ở địa chỉ '150 An Duong Vuong'?,SELECT * FROM Kho WHERE DiaChi LIKE '%150 An Duong Vuong%';
+43,Quan ly Kho & Nha Cung Cap,Liệt kê mã phiếu nhập và tên nhà cung cấp tương ứng.,"SELECT pn.MaPN, ncc.TenNCC FROM PhieuNhap pn JOIN NhaCungCap ncc ON pn.MaNCC = ncc.MaNCC;"
+44,Quan ly Kho & Nha Cung Cap,Đếm số lượt nhập hàng theo từng tháng trong năm.,"SELECT strftime('%Y-%m', NgayNhap) AS Thang, COUNT(*) AS SoLuotNhap FROM PhieuNhap GROUP BY Thang;"
+45,Quan ly Kho & Nha Cung Cap,Cho biết ngày nhập hàng đầu tiên lưu trong hệ thống.,SELECT MIN(NgayNhap) AS NgayNhapDauTien FROM PhieuNhap;
+46,Quan ly Nhap kho & Vat lieu,Hiển thị toàn bộ danh sách phiếu nhập.,SELECT * FROM PhieuNhap;
+47,Quan ly Kho & Vat lieu,Hiển thị toàn bộ chi tiết của tất cả các phiếu nhập.,SELECT * FROM ChiTietPhieuNhap;
+48,Quan ly Nhap kho & Vat lieu,"Danh sách chi tiết phiếu nhập gồm: Mã phiếu, Mã vật liệu, Số lượng, Đơn giá và Thành tiền.","SELECT MaPN, MaVT, SoLuong, DonGia, (SoLuong * DonGia) AS ThanhTien FROM ChiTietPhieuNhap;"
+49,Quan ly Nhap kho & Vat lieu,Tính tổng thành tiền của từng phiếu nhập.,"SELECT MaPN, SUM(SoLuong * DonGia) AS TongTienPhieuNhap FROM ChiTietPhieuNhap GROUP BY MaPN;"
+50,Quan ly Nhap kho & Vat lieu,Phiếu nhập nào có tổng giá trị lớn nhất?,"SELECT MaPN, SUM(SoLuong * DonGia) AS TongGiaTri FROM ChiTietPhieuNhap GROUP BY MaPN ORDER BY TongGiaTri DESC LIMIT 1;"
+51,Quan ly Nhap kho & Vat lieu,Tính tổng số lượng nhập của từng mã vật liệu.,"SELECT MaVT, SUM(SoLuong) AS TongSoLuongNhap FROM ChiTietPhieuNhap GROUP BY MaVT;"
+52,Quan ly Nhap kho & Vat lieu,Tính tổng giá trị nhập kho của từng vật liệu.,"SELECT MaVT, SUM(SoLuong * DonGia) AS TongGiaTriNhap FROM ChiTietPhieuNhap GROUP BY MaVT;"
+53,Quan ly Nhap kho & Vat lieu,Cho biết đơn giá nhập trung bình của từng mã vật liệu.,"SELECT MaVT, AVG(DonGia) AS DonGiaTrungBinh FROM ChiTietPhieuNhap GROUP BY MaVT;"
+54,Quan ly Nhap kho & Vat lieu,Liệt kê các phiếu nhập được thực hiện trong tháng 6/2026.,SELECT * FROM PhieuNhap WHERE NgayNhap BETWEEN '2026-06-01' AND '2026-06-30';
+55,Quan ly Nhap kho & Vat lieu,Tìm chi tiết phiếu nhập có số lượng lớn hơn 300.,SELECT * FROM ChiTietPhieuNhap WHERE SoLuong > 300;
+56,Quan ly Nhap kho & Vat lieu,"Tìm chi tiết phiếu nhập có đơn giá từ 50,000 đến 100,000 VNĐ.",SELECT * FROM ChiTietPhieuNhap WHERE DonGia BETWEEN 50000 AND 100000;
+57,Quan ly Nhap kho & Vat lieu,Vật liệu nào có đơn giá nhập cao nhất?,"SELECT MaVT, DonGia FROM ChiTietPhieuNhap ORDER BY DonGia DESC LIMIT 1;"
+58,Quan ly Nhap kho & Vat lieu,Vật liệu nào có đơn giá nhập thấp nhất?,"SELECT MaVT, DonGia FROM ChiTietPhieuNhap ORDER BY DonGia ASC LIMIT 1;"
+59,Quan ly Nhap kho & Vat lieu,Cho biết thông tin các phiếu nhập do nhân viên có mã 'NV01' lập.,SELECT * FROM PhieuNhap WHERE MaNV = 'NV01';
+60,Quan ly Nhap kho & Vat lieu,Hiển thị thông tin phiếu nhập kèm tên nhân viên và tên nhà cung cấp.,"SELECT pn.MaPN, pn.NgayNhap, nv.HoTen AS TenNhanVien, ncc.TenNCC FROM PhieuNhap pn JOIN NhanVien nv ON pn.MaNV = nv.MaNV JOIN NhaCungCap ncc ON pn.MaNCC = ncc.MaNCC;"
+61,Quan ly Nhap kho & Vat lieu,Mã vật liệu 'VT01' đã được nhập tổng cộng bao nhiêu?,SELECT SUM(SoLuong) AS TongNhapVT01 FROM ChiTietPhieuNhap WHERE MaVT = 'VT01';
+62,Quan ly Nhap kho & Vat lieu,Những phiếu nhập nào nhập vật liệu 'VT02'?,SELECT DISTINCT MaPN FROM ChiTietPhieuNhap WHERE MaVT = 'VT02';
+63,Quan ly Nhap kho & Vat lieu,Tổng toàn bộ chi phí nhập hàng trong kho là bao nhiêu?,SELECT SUM(SoLuong * DonGia) AS TongChiPhiNhap FROM ChiTietPhieuNhap;
+64,Quan ly Nhap kho & Vat lieu,Có bao nhiêu lượt nhập mã vật liệu riêng biệt?,SELECT COUNT(DISTINCT MaVT) AS SoVatLieuDaNhap FROM ChiTietPhieuNhap;
+65,Quan ly Nhap kho & Vat lieu,Liệt kê phiếu nhập được thực hiện vào ngày '2026-06-01'.,SELECT * FROM PhieuNhap WHERE NgayNhap = '2026-06-01';
+66,Quan ly Nhap kho & Vat lieu,Đếm số lượng vật liệu được nhập trong mỗi phiếu nhập.,"SELECT MaPN, COUNT(MaVT) AS SoLoaiVatLieu FROM ChiTietPhieuNhap GROUP BY MaPN;"
+67,Quan ly Nhap kho & Vat lieu,Danh sách phiếu nhập sắp xếp theo ngày nhập mới nhất.,SELECT * FROM PhieuNhap ORDER BY NgayNhap DESC;
+68,Quan ly Nhap kho & Vat lieu,Các mặt hàng vật liệu nào có tổng số lượng nhập lớn hơn 200?,"SELECT MaVT, SUM(SoLuong) AS TongSL FROM ChiTietPhieuNhap GROUP BY MaVT HAVING SUM(SoLuong) > 200;"
+69,Quan ly Nhap kho & Vat lieu,"Các mặt hàng vật liệu nào có đơn giá nhập trung bình trên 80,000?","SELECT MaVT, AVG(DonGia) AS DGTB FROM ChiTietPhieuNhap GROUP BY MaVT HAVING AVG(DonGia) > 80000;"
+70,Quan ly Nhap kho & Vat lieu,Hiển thị danh sách phiếu nhập cùng tổng tiền của từng phiếu.,"SELECT pn.MaPN, pn.NgayNhap, SUM(ct.SoLuong * ct.DonGia) AS TongTien FROM PhieuNhap pn JOIN ChiTietPhieuNhap ct ON pn.MaPN = ct.MaPN GROUP BY pn.MaPN, pn.NgayNhap;"
+71,Quan ly Xuat kho & Ban hang,Hiển thị toàn bộ danh sách các phiếu xuất.,SELECT * FROM PhieuXuat;
+72,Quan ly Xuat kho & Ban hang,Hiển thị toàn bộ chi tiết các phiếu xuất.,SELECT * FROM ChiTietPhieuXuat;
+73,Quan ly Xuat kho & Ban hang,"Liệt kê thông tin phiếu xuất gồm: Mã phiếu xuất, Ngày xuất, Người nhận và Tên nhân viên lập.","SELECT px.MaPX, px.NgayXuat, px.NguoiNhan, nv.HoTen AS TenNhanVien FROM PhieuXuat px JOIN NhanVien nv ON px.MaNV = nv.MaNV;"
+74,Quan ly Xuat kho & Ban hang,Tính thành tiền cho từng dòng chi tiết xuất kho.,"SELECT MaPX, MaVT, SoLuong, DonGia, (SoLuong * DonGia) AS ThanhTien FROM ChiTietPhieuXuat;"
+75,Quan ly Xuat kho & Ban hang,Tính tổng giá trị của mỗi phiếu xuất.,"SELECT MaPX, SUM(SoLuong * DonGia) AS TongTienPhieuXuat FROM ChiTietPhieuXuat GROUP BY MaPX;"
+76,Quan ly Xuat kho & Ban hang,Phiếu xuất nào có giá trị lớn nhất?,"SELECT MaPX, SUM(SoLuong * DonGia) AS TongGiaTri FROM ChiTietPhieuXuat GROUP BY MaPX ORDER BY TongGiaTri DESC LIMIT 1;"
+77,Quan ly Xuat kho & Ban hang,Tính tổng số lượng xuất theo từng mã vật liệu.,"SELECT MaVT, SUM(SoLuong) AS TongSoLuongXuat FROM ChiTietPhieuXuat GROUP BY MaVT;"
+78,Quan ly Xuat kho & Ban hang,Tính tổng doanh thu xuất hàng theo từng vật liệu.,"SELECT MaVT, SUM(SoLuong * DonGia) AS TongDoanhThu FROM ChiTietPhieuXuat GROUP BY MaVT;"
+79,Quan ly Xuat kho & Ban hang,Thống kê danh sách khách hàng / người nhận và tổng tiền đã xuất cho họ.,"SELECT px.NguoiNhan, SUM(ct.SoLuong * ct.DonGia) AS TongTienXuat FROM PhieuXuat px JOIN ChiTietPhieuXuat ct ON px.MaPX = ct.MaPX GROUP BY px.NguoiNhan;"
+80,Quan ly Xuat kho & Ban hang,Người nhận / Khách hàng nào mua hàng với tổng giá trị lớn nhất?,"SELECT px.NguoiNhan, SUM(ct.SoLuong * ct.DonGia) AS TongTien FROM PhieuXuat px JOIN ChiTietPhieuXuat ct ON px.MaPX = ct.MaPX GROUP BY px.NguoiNhan ORDER BY TongTien DESC LIMIT 1;"
+81,Quan ly Xuat kho & Ban hang,Các phiếu xuất được thực hiện trong tháng 6/2026.,SELECT * FROM PhieuXuat WHERE NgayXuat BETWEEN '2026-06-01' AND '2026-06-30';
+82,Quan ly Xuat kho & Ban hang,Cho biết ngày xuất hàng mới nhất.,SELECT MAX(NgayXuat) AS NgayXuatMoiNhat FROM PhieuXuat;
+83,Quan ly Xuat kho & Ban hang,Cho biết ngày xuất hàng đầu tiên.,SELECT MIN(NgayXuat) AS NgayXuatDauTien FROM PhieuXuat;
+84,Quan ly Xuat kho & Ban hang,Tìm các phiếu xuất xuất cho công ty có tên chứa 'ABC'.,SELECT * FROM PhieuXuat WHERE NguoiNhan LIKE '%ABC%';
+85,Quan ly Xuat kho & Ban hang,Tổng số lượng vật liệu 'VT01' đã xuất ra khỏi kho là bao nhiêu?,SELECT SUM(SoLuong) AS TongXuatVT01 FROM ChiTietPhieuXuat WHERE MaVT = 'VT01';
+86,Quan ly Xuat kho & Ban hang,Tổng doanh thu thu được từ tất cả các phiếu xuất.,SELECT SUM(SoLuong * DonGia) AS TongDoanhThuXuat FROM ChiTietPhieuXuat;
+87,Quan ly Xuat kho & Ban hang,Đếm số lượng phiếu xuất được lập bởi nhân viên 'NV02'.,SELECT COUNT(*) AS SoPhieuNV02 FROM PhieuXuat WHERE MaNV = 'NV02';
+88,Quan ly Xuat kho & Ban hang,Mặt hàng nào có số lượng xuất cao nhất trong một lần xuất?,"SELECT MaVT, SoLuong FROM ChiTietPhieuXuat ORDER BY SoLuong DESC LIMIT 1;"
+89,Quan ly Xuat kho & Ban hang,Hiển thị danh sách phiếu xuất cùng tổng số loại vật liệu có trong phiếu.,"SELECT MaPX, COUNT(DISTINCT MaVT) AS SoLoaiVatLieu FROM ChiTietPhieuXuat GROUP BY MaPX;"
+90,Quan ly Xuat kho & Ban hang,Sắp xếp danh sách phiếu xuất theo thứ tự ngày xuất tăng dần.,SELECT * FROM PhieuXuat ORDER BY NgayXuat ASC;
+91,Bao cao Tong hop & Ton kho,Báo cáo tổng hợp số lượng nhập và số lượng xuất của tất cả các mã vật liệu.,"SELECT COALESCE(n.MaVT, x.MaVT) AS MaVT, COALESCE(n.TongNhap, 0) AS TongNhap, COALESCE(x.TongXuat, 0) AS TongXuat FROM (SELECT MaVT, SUM(SoLuong) AS TongNhap FROM ChiTietPhieuNhap GROUP BY MaVT) n FULL OUTER JOIN (SELECT MaVT, SUM(SoLuong) AS TongXuat FROM ChiTietPhieuXuat GROUP BY MaVT) x ON n.MaVT = x.MaVT;"
+92,Bao cao Tong hop & Ton kho,Tính lượng tồn kho lý thuyết (Tổng nhập - Tổng xuất) của từng vật liệu.,"SELECT COALESCE(n.MaVT, x.MaVT) AS MaVT, (COALESCE(n.TongNhap, 0) - COALESCE(x.TongXuat, 0)) AS TonKho FROM (SELECT MaVT, SUM(SoLuong) AS TongNhap FROM ChiTietPhieuNhap GROUP BY MaVT) n FULL OUTER JOIN (SELECT MaVT, SUM(SoLuong) AS TongXuat FROM ChiTietPhieuXuat GROUP BY MaVT) x ON n.MaVT = x.MaVT;"
+93,Bao cao Tong hop & Ton kho,Tính tổng chênh lệch giữa giá trị nhập và giá trị xuất của kho.,SELECT (SELECT SUM(SoLuong * DonGia) FROM ChiTietPhieuNhap) - (SELECT SUM(SoLuong * DonGia) FROM ChiTietPhieuXuat) AS ChenhLechGiaTri;
+94,Bao cao Tong hop & Ton kho,Thống kê tổng số phiếu nhập và tổng số phiếu xuất hiện có.,"SELECT (SELECT COUNT(*) FROM PhieuNhap) AS TongPhieuNhap, (SELECT COUNT(*) FROM PhieuXuat) AS TongPhieuXuat;"
+95,Bao cao Tong hop & Ton kho,Liệt kê mã các vật liệu vừa có lịch sử nhập vừa có lịch sử xuất.,SELECT DISTINCT MaVT FROM ChiTietPhieuNhap INTERSECT SELECT DISTINCT MaVT FROM ChiTietPhieuXuat;
+96,Bao cao Tong hop & Ton kho,Liệt kê mã các vật liệu đã từng nhập nhưng chưa từng xuất.,SELECT DISTINCT MaVT FROM ChiTietPhieuNhap EXCEPT SELECT DISTINCT MaVT FROM ChiTietPhieuXuat;
+97,Bao cao Tong hop & Ton kho,Tính đơn giá trung bình chung của vật liệu trên cả phiếu nhập và phiếu xuất.,"SELECT MaVT, AVG(DonGia) AS DonGiaTrungBinh FROM (SELECT MaVT, DonGia FROM ChiTietPhieuNhap UNION ALL SELECT MaVT, DonGia FROM ChiTietPhieuXuat) Combined GROUP BY MaVT;"
+98,Bao cao Tong hop & Ton kho,Tổng giá trị vật liệu tồn kho tính theo giá nhập gần nhất.,"SELECT SUM((COALESCE(n.TongNhap, 0) - COALESCE(x.TongXuat, 0)) * n.DonGiaGannhat) AS TongGiaTriTon FROM (SELECT MaVT, SUM(SoLuong) AS TongNhap, AVG(DonGia) AS DonGiaGannhat FROM ChiTietPhieuNhap GROUP BY MaVT) n LEFT JOIN (SELECT MaVT, SUM(SoLuong) AS TongXuat FROM ChiTietPhieuXuat GROUP BY MaVT) x ON n.MaVT = x.MaVT;"
+99,Bao cao Tong hop & Ton kho,Thống kê tổng số giao dịch (cả nhập lẫn xuất) theo từng tháng.,"SELECT strftime('%Y-%m', NgayGiaoDich) AS Thang, COUNT(*) AS TongGiaoDich FROM (SELECT NgayNhap AS NgayGiaoDich FROM PhieuNhap UNION ALL SELECT NgayXuat AS NgayGiaoDich FROM PhieuXuat) GROUP BY Thang;"
+100,Bao cao Tong hop & Ton kho,Cho biết tổng số nhân viên đã từng tham gia vào quy trình nhập hoặc xuất kho.,SELECT COUNT(DISTINCT MaNV) AS SoNhanVienHoatDong FROM (SELECT MaNV FROM PhieuNhap UNION SELECT MaNV FROM PhieuXuat);

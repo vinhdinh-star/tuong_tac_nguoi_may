@@ -1,0 +1,557 @@
+[
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Kinh năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Kinh';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Kinh chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Kinh';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Tày năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Tày';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Tày chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Tày';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Thái năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Thái';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Thái chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Thái';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Mường năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Mường';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Mường chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Mường';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc H'Mông năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'H'Mông';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc H'Mông chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'H'Mông';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Khmer năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Khmer';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Khmer chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Khmer';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Nùng năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Nùng';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Nùng chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Nùng';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Dao năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Dao';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Dao chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Dao';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Hoa năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Hoa';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Hoa chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Hoa';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Gia Rai năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Gia Rai';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Gia Rai chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Gia Rai';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Ê Đê năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Ê Đê';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Ê Đê chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Ê Đê';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Ba Na năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Ba Na';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Ba Na chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Ba Na';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Xơ Đăng năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Xơ Đăng';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Xơ Đăng chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Xơ Đăng';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Sán Chay năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Sán Chay';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Sán Chay chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Sán Chay';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Cơ Ho năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Cơ Ho';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Cơ Ho chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Cơ Ho';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Sán Dìu năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Sán Dìu';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Sán Dìu chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Sán Dìu';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Chăm năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Chăm';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Chăm chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Chăm';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Hrê năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Hrê';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Hrê chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Hrê';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Mnông năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Mnông';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Mnông chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Mnông';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Ra Glai năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Ra Glai';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Ra Glai chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Ra Glai';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Xtiêng năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Xtiêng';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Xtiêng chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Xtiêng';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Bru-Vân Kiều năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Bru-Vân Kiều';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Bru-Vân Kiều chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Bru-Vân Kiều';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Thổ năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Thổ';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Thổ chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Thổ';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Khơ Mú năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Khơ Mú';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Khơ Mú chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Khơ Mú';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Cơ Tu năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Cơ Tu';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Cơ Tu chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Cơ Tu';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Giáy năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Giáy';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Giáy chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Giáy';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Gié Triêng năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Gié Triêng';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Gié Triêng chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Gié Triêng';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Tà Ôi năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Tà Ôi';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Tà Ôi chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Tà Ôi';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Mạ năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Mạ';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Mạ chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Mạ';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Co năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Co';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Co chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Co';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Chơ Ro năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Chơ Ro';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Chơ Ro chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Chơ Ro';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Xinh Mun năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Xinh Mun';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Xinh Mun chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Xinh Mun';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Hà Nhì năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Hà Nhì';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Hà Nhì chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Hà Nhì';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Chu Ru năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Chu Ru';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Chu Ru chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Chu Ru';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Lao năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Lao';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Lao chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Lao';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Kháng năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Kháng';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Kháng chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Kháng';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc La Chí năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'La Chí';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc La Chí chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'La Chí';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc La Ha năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'La Ha';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc La Ha chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'La Ha';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Phù Lá năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Phù Lá';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Phù Lá chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Phù Lá';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc La Hủ năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'La Hủ';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc La Hủ chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'La Hủ';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Lự năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Lự';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Lự chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Lự';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Lô Lô năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Lô Lô';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Lô Lô chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Lô Lô';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Chứt năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Chứt';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Chứt chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Chứt';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Mảng năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Mảng';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Mảng chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Mảng';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Pà Thẻn năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Pà Thẻn';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Pà Thẻn chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Pà Thẻn';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Cơ Lao năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Cơ Lao';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Cơ Lao chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Cơ Lao';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Cống năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Cống';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Cống chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Cống';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Bố Y năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Bố Y';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Bố Y chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Bố Y';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Si La năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Si La';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Si La chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Si La';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Pu Péo năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Pu Péo';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Pu Péo chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Pu Péo';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Brâu năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Brâu';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Brâu chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Brâu';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Ơ Đu năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Ơ Đu';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Ơ Đu chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Ơ Đu';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Rơ Măm năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Rơ Măm';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Rơ Măm chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Rơ Măm';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Dân số của dân tộc Ngái năm 2019 là bao nhiêu?",
+        "output": "SELECT DanSo2019 FROM DanhSachDanToc WHERE TenDanToc = 'Ngái';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tỷ lệ dân số của dân tộc Ngái chiếm bao nhiêu phần trăm?",
+        "output": "SELECT TyLe FROM DanhSachDanToc WHERE TenDanToc = 'Ngái';"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Top 5 dân tộc đông dân nhất Việt Nam",
+        "output": "SELECT TenDanToc, DanSo2019 FROM DanhSachDanToc ORDER BY DanSo2019 DESC LIMIT 5;"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Tổng dân số của tất cả các dân tộc là bao nhiêu?",
+        "output": "SELECT SUM(DanSo2019) AS TongDanSo FROM DanhSachDanToc;"
+    },
+    {
+        "instruction": "Bạn là chuyên gia Text-to-SQL. Dựa vào bảng DanhSachDanToc (STT, TenDanToc, DanSo2019, TyLe), hãy viết câu lệnh SQLite.",
+        "input": "Liệt kê các dân tộc có tỷ lệ nhỏ hơn 0.1%",
+        "output": "SELECT TenDanToc, TyLe FROM DanhSachDanToc WHERE TyLe < 0.1;"
+    }
+]
