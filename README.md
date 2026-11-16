@@ -1,7 +1,7 @@
 # tuong_tac_nguoi_may
 # https://github.com/vinhdinh-star/hoithoai_thongminh
 
-# Chi tiết hệ thống ở đường link phía trêm github.com/vinhdinh-star/hoithoai_thongminh
+# Chi tiết hệ thống ở đường link phía trên github.com/vinhdinh-star/hoithoai_thongminh
 # 📦 Hệ thống Text-to-SQL Quản lý Kho thông minh (FastAPI + LLM + In-Context Learning)
 
 Hệ thống ứng dụng trí tuệ nhân tạo (Text-to-SQL) giúp chuyển đổi câu hỏi bằng ngôn ngữ tự nhiên tiếng Việt thành câu lệnh SQL chuẩn xác, kết nối trực tiếp với cơ sở dữ liệu quản lý kho vật liệu xây dựng (VLXD). Dự án tích hợp cơ chế **In-Context Learning (Học theo ngữ cảnh)** từ hàng ngàn mẫu dữ liệu (Spider dataset) kết hợp cùng mô hình ngôn ngữ lớn (LLM) và giao diện API tốc độ cao bằng **FastAPI**.
